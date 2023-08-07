@@ -1,0 +1,40 @@
+@use "variables";
+@use "hero";
+@use "about";
+
+@font-face {
+    font-family: "Papyrus";
+    src: url("../../assets/fonts/PAPYRUS.TTF");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Papyrus", fantasy;
+}
+
+body {
+    background-color: variables.$bgColor;
+}
+
+.text {
+    font-size: 28px;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    margin: 0 20% 60px;
+    padding: 48px 0;
+    background-color: rgba($color: #000, $alpha: 0.3);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}

@@ -1,0 +1,31 @@
+.about {
+    padding: 4vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        margin: 0 24px;
+
+        &__img {
+            width: 40%;
+            height: 800px;
+            object-fit: cover;
+            margin-right: 60px;
+            border-radius: 30px;
+        }
+
+        &__description {
+            margin-top: -120px;
+            &__paragraph {
+                margin-bottom: 24px;
+                
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
