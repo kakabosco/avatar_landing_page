@@ -1,4 +1,5 @@
 @use "variables";
+@use "header";
 @use "hero";
 @use "about";
 @use "characters";
@@ -14,6 +15,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Papyrus", fantasy;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,4 +44,16 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
+}
+
+#characters,
+#awards-reviews {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        margin-top: 72px;
+        visibility: hidden;
+    }
 }

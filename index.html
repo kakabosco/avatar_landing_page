@@ -8,7 +8,24 @@
         <title>Avatar - O Filme</title>
     </head>
     <body>
-        <section class="hero">
+        <header class="header">
+            <div class="header__brand">
+                <img src="dist/images/avatar_icon2.png" alt="Avatar Icon">
+            </div>
+            <ul class="header__menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#characters">Personagens</a></li>
+                <li><a href="#awards-reviews">Prêmios e Avaliação</a></li>
+            </ul>
+            <div class="header__menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+
+        <section class="hero" id="hero">
             <div class="hero__content">
                 <div class="hero__content__title">
                     <img src="dist/images/avatar_logo.png" alt="Avatar" />
@@ -17,7 +34,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__content">
                 <img
                     class="about__content__img"
@@ -49,7 +66,7 @@
             </div>
         </section>
 
-        <section class="characters">
+        <section class="characters" id="characters">
             <div class="section-title">
                 <div class="title">Personagens Principais</div>
             </div>
@@ -112,7 +129,7 @@
             </div>
         </section>
 
-        <section class="awards-and-reviews">
+        <section class="awards-and-reviews" id="awards-reviews">
             <div class="section-title">
                 <div class="title">Prêmios e Avaliações</div>
             </div>
@@ -159,5 +176,7 @@
                 </div>
             </div>
         </section>
+
+        <script src="dist/js/main.js"></script>
     </body>
 </html>
