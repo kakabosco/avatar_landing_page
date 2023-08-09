@@ -1,6 +1,12 @@
+@use "variables";
+
 .awards-and-reviews {
     padding: 4vw;
     text-align: center;
+
+    @media (max-width: variables.$breakpoint-desktop) {
+        padding: 6vw;
+    }
 
     .awards,
     .reviews {
@@ -18,12 +24,21 @@
             flex-wrap: wrap;
             justify-content: space-around;
 
+            @media (max-width: variables.$breakpoint-desktop) {
+                flex-direction: column;
+            }
+
             &__item {
-                width: 30%;
+                width: 40%;
                 margin: 1em;
                 padding: 1em;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
                 transition: 0.3s;
+
+                @media (max-width: variables.$breakpoint-desktop) {
+                    width: 80%;
+                    margin: 40px auto;
+                }
 
                 &:hover {
                     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);

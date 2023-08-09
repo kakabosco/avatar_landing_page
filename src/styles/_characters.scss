@@ -1,5 +1,11 @@
+@use "variables";
+
 .characters {
     padding: 4vw;
+
+    @media (max-width: variables.$breakpoint-desktop) {
+        padding: 6vw;
+    }
 
     &__character {
         display: flex;
@@ -9,6 +15,11 @@
         &__item {
             max-width: 500px;
             margin: 0 24px 60px;
+
+            @media (max-width: variables.$breakpoint-desktop) {
+                width: 80vw;
+                margin: 0 12px 40px;
+            }
 
             &__img-container {
                 position: relative;

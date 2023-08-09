@@ -35,7 +35,7 @@ body {
 .section-title {
     display: flex;
     justify-content: center;
-    margin: 0 20% 60px;
+    margin: 0 12% 60px;
     padding: 48px 0;
     background-color: rgba($color: #000, $alpha: 0.3);
     border-radius: 30px;
@@ -43,17 +43,21 @@ body {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 4px;
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        font-size: 1.8em;
+    }
 }
 
+#about,
 #characters,
 #awards-reviews {
-    position: relative;
+    padding-top: calc(110px + 4vw);
+    margin-top: -110px;
 
-    &::before {
-        content: "";
-        display: block;
-        margin-top: 72px;
-        visibility: hidden;
+    @media (max-width: variables.$breakpoint-desktop) {
+        padding-top: calc(100px + 6vw);
     }
 }
