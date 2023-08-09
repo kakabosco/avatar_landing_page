@@ -30,6 +30,10 @@ body {
     color: #fff;
     font-weight: normal;
     letter-spacing: 2px;
+
+    @media (max-width: variables.$breakpoint-mobile) {
+        font-size: 14px;
+    }
 }
 
 .section-title {
@@ -49,6 +53,12 @@ body {
     @media (max-width: variables.$breakpoint-tablet) {
         font-size: 1.8em;
     }
+
+    @media (max-width: variables.$breakpoint-mobile) {
+        font-size: 1em;
+        padding: 24px 0;
+        margin: 0 0 24px;
+    }
 }
 
 #about,
@@ -59,5 +69,10 @@ body {
 
     @media (max-width: variables.$breakpoint-desktop) {
         padding-top: calc(100px + 6vw);
+    }
+
+    @media (max-width: variables.$breakpoint-mobile) {
+        padding-top: calc(60px + 6vw);
+        margin-top: -60px;
     }
 }

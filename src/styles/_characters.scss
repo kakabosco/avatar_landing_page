@@ -21,6 +21,10 @@
                 margin: 0 12px 40px;
             }
 
+            @media (max-width: variables.$breakpoint-mobile) {
+                margin-bottom: 20px;
+            }
+
             &__img-container {
                 position: relative;
 
@@ -29,6 +33,10 @@
                     height: 700px;
                     object-fit: cover;
                     border-radius: 20px;
+
+                    @media (max-width: variables.$breakpoint-mobile) {
+                        height: 300px;
+                    }
                 }
 
                 .name-overlay {
@@ -46,6 +54,10 @@
                     h3 {
                         font-size: 24px;
                         font-weight: normal;
+
+                        @media (max-width: variables.$breakpoint-mobile) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }

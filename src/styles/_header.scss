@@ -16,6 +16,10 @@
     background-color: transparent;
     transition: background-color 0.5s ease;
 
+    @media (max-width: variables.$breakpoint-mobile) {
+        padding: 10px 24px;
+    }
+
     &--is-shown {
         background-color: rgba(0, 0, 0, 0.9);
     }
@@ -23,6 +27,12 @@
     &__brand {
         img {
             width: 50px;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: variables.$breakpoint-mobile) {
+                width: 32px;
+            }
         }
     }
 
@@ -44,6 +54,10 @@
                     margin-bottom: 24px;
                 }
             }
+
+            @media (max-width: variables.$breakpoint-mobile) {
+                margin: 0 24px 0 0;
+            }
         }
 
         a {
@@ -57,7 +71,11 @@
             }
 
             @media (max-width: variables.$breakpoint-tablet) {
-                font-size: 20px;
+                font-size: 1.3em;
+            }
+
+            @media (max-width: variables.$breakpoint-mobile) {
+                font-size: 0.8em;
             }
         }
 
@@ -84,10 +102,18 @@
             display: flex;
         }
 
+        @media (max-width: variables.$breakpoint-mobile) {
+            height: 18px;
+        }
+
         .bar {
             width: 30px;
             height: 4px;
             background-color: #fff;
+
+            @media (max-width: variables.$breakpoint-mobile) {
+                height: 2px;
+            }
         }
     }
 }

@@ -10,7 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".header__menu-toggle");
     const menu = document.querySelector(".header__menu");
 
-    menuToggle.addEventListener("click", () => menu.classList.toggle("active"));
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+            showHeaderElements();
+        } else {
+            hideHeaderElements();
+        }
+    });
 
     const menuLinks = document.querySelectorAll(".header__menu a");
     menuLinks.forEach((link) => {
@@ -35,7 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentPosition = window.scrollY;
         const halfHeightHero = heightHero / 2;
 
-        if (currentPosition < halfHeightHero) {
+        if (
+            currentPosition < halfHeightHero &&
+            !menu.classList.contains("active")
+        ) {
             hideHeaderElements();
         } else {
             showHeaderElements();
