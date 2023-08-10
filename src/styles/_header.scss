@@ -1,8 +1,5 @@
 @use "variables";
 
-//TODO:
-// Transição do menu-toggle ao abrir e fechar
-
 .header {
     position: fixed;
     top: 0;
@@ -21,7 +18,7 @@
     }
 
     &--is-shown {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     &__brand {
